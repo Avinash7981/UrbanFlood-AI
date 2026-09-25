@@ -1,0 +1,181 @@
+import { HistoricalFloodEvent } from '@/types';
+
+export const hyderabadHistoricalEvents: HistoricalFloodEvent[] = [
+  {
+    id: 'evt-hyd-2025-08-15',
+    cityId: 'hyderabad',
+    date: '2025-08-15',
+    title: 'Independence Day Flooding — Musi Corridor',
+    severity: 'critical',
+    maxRainfallMmHr: 96,
+    totalRainfallMm: 220,
+    durationHours: 8,
+    affectedAreaSqKm: 42,
+    affectedZones: ['zone-01', 'zone-06', 'zone-09', 'zone-12'],
+    description: 'Intense rainfall during Independence Day caused severe flooding along the Musi River corridor. Multiple areas in old city submerged. Drainage systems overwhelmed within 2 hours.',
+    rainfallProgression: [
+      { timestamp: '2025-08-15T08:00:00Z', intensityMmHr: 15, accumulationMm: 15, source: 'mock' },
+      { timestamp: '2025-08-15T09:00:00Z', intensityMmHr: 35, accumulationMm: 50, source: 'mock' },
+      { timestamp: '2025-08-15T10:00:00Z', intensityMmHr: 72, accumulationMm: 122, source: 'mock' },
+      { timestamp: '2025-08-15T11:00:00Z', intensityMmHr: 96, accumulationMm: 218, source: 'mock' },
+      { timestamp: '2025-08-15T12:00:00Z', intensityMmHr: 65, accumulationMm: 283, source: 'mock' },
+      { timestamp: '2025-08-15T13:00:00Z', intensityMmHr: 40, accumulationMm: 323, source: 'mock' },
+      { timestamp: '2025-08-15T14:00:00Z', intensityMmHr: 18, accumulationMm: 341, source: 'mock' },
+      { timestamp: '2025-08-15T15:00:00Z', intensityMmHr: 5, accumulationMm: 346, source: 'mock' },
+    ],
+    predictedExtent: {
+      type: 'FeatureCollection',
+      features: [
+        {
+          type: 'Feature',
+          geometry: {
+            type: 'Polygon',
+            coordinates: [[[78.435, 17.365], [78.465, 17.365], [78.465, 17.395], [78.435, 17.395], [78.435, 17.365]]],
+          },
+          properties: { type: 'predicted', confidence: 78 },
+        },
+      ],
+    },
+    observedExtent: {
+      type: 'FeatureCollection',
+      features: [
+        {
+          type: 'Feature',
+          geometry: {
+            type: 'Polygon',
+            coordinates: [[[78.438, 17.368], [78.462, 17.368], [78.462, 17.392], [78.438, 17.392], [78.438, 17.368]]],
+          },
+          properties: { type: 'observed', source: 'mock_sentinel1' },
+        },
+      ],
+    },
+    metadata: {
+      dataSource: 'Mock — based on historical patterns',
+      verificationStatus: 'demo',
+    },
+  },
+  {
+    id: 'evt-hyd-2025-09-04',
+    cityId: 'hyderabad',
+    date: '2025-09-04',
+    title: 'Southwest Monsoon Surge — Western Catchment',
+    severity: 'high',
+    maxRainfallMmHr: 74,
+    totalRainfallMm: 168,
+    durationHours: 6,
+    affectedAreaSqKm: 28,
+    affectedZones: ['zone-03', 'zone-05', 'zone-08'],
+    description: 'Active monsoon depression brought sustained heavy rainfall to western Hyderabad. Kukatpally nala overflow affected Miyapur and surrounding areas.',
+    rainfallProgression: [
+      { timestamp: '2025-09-04T14:00:00Z', intensityMmHr: 20, accumulationMm: 20, source: 'mock' },
+      { timestamp: '2025-09-04T15:00:00Z', intensityMmHr: 45, accumulationMm: 65, source: 'mock' },
+      { timestamp: '2025-09-04T16:00:00Z', intensityMmHr: 74, accumulationMm: 139, source: 'mock' },
+      { timestamp: '2025-09-04T17:00:00Z', intensityMmHr: 55, accumulationMm: 194, source: 'mock' },
+      { timestamp: '2025-09-04T18:00:00Z', intensityMmHr: 30, accumulationMm: 224, source: 'mock' },
+      { timestamp: '2025-09-04T19:00:00Z', intensityMmHr: 10, accumulationMm: 234, source: 'mock' },
+    ],
+    metadata: {
+      dataSource: 'Mock — based on historical patterns',
+      verificationStatus: 'demo',
+    },
+  },
+  {
+    id: 'evt-hyd-2024-07-21',
+    cityId: 'hyderabad',
+    date: '2024-07-21',
+    title: 'Severe Urban Flooding — Southern Hyderabad',
+    severity: 'critical',
+    maxRainfallMmHr: 112,
+    totalRainfallMm: 285,
+    durationHours: 10,
+    affectedAreaSqKm: 55,
+    affectedZones: ['zone-01', 'zone-06', 'zone-09', 'zone-12', 'zone-04'],
+    description: 'Exceptional rainfall event caused widespread flooding across southern Hyderabad. LB Nagar, Saroornagar, and Falaknuma severely affected. Multiple drainage systems failed.',
+    rainfallProgression: [
+      { timestamp: '2024-07-21T06:00:00Z', intensityMmHr: 25, accumulationMm: 25, source: 'mock' },
+      { timestamp: '2024-07-21T07:00:00Z', intensityMmHr: 55, accumulationMm: 80, source: 'mock' },
+      { timestamp: '2024-07-21T08:00:00Z', intensityMmHr: 88, accumulationMm: 168, source: 'mock' },
+      { timestamp: '2024-07-21T09:00:00Z', intensityMmHr: 112, accumulationMm: 280, source: 'mock' },
+      { timestamp: '2024-07-21T10:00:00Z', intensityMmHr: 78, accumulationMm: 358, source: 'mock' },
+      { timestamp: '2024-07-21T11:00:00Z', intensityMmHr: 45, accumulationMm: 403, source: 'mock' },
+      { timestamp: '2024-07-21T12:00:00Z', intensityMmHr: 22, accumulationMm: 425, source: 'mock' },
+    ],
+    predictedExtent: {
+      type: 'FeatureCollection',
+      features: [
+        {
+          type: 'Feature',
+          geometry: {
+            type: 'Polygon',
+            coordinates: [[[78.520, 17.345], [78.560, 17.345], [78.560, 17.380], [78.520, 17.380], [78.520, 17.345]]],
+          },
+          properties: { type: 'predicted', confidence: 82 },
+        },
+      ],
+    },
+    observedExtent: {
+      type: 'FeatureCollection',
+      features: [
+        {
+          type: 'Feature',
+          geometry: {
+            type: 'Polygon',
+            coordinates: [[[78.522, 17.348], [78.558, 17.348], [78.558, 17.378], [78.522, 17.378], [78.522, 17.348]]],
+          },
+          properties: { type: 'observed', source: 'mock_sentinel1' },
+        },
+      ],
+    },
+    metadata: {
+      dataSource: 'Mock — based on historical patterns',
+      verificationStatus: 'demo',
+    },
+  },
+  {
+    id: 'evt-hyd-2024-10-12',
+    cityId: 'hyderabad',
+    date: '2024-10-12',
+    title: 'Post-Monsoon Flash Flood — Hussain Sagar',
+    severity: 'high',
+    maxRainfallMmHr: 68,
+    totalRainfallMm: 135,
+    durationHours: 5,
+    affectedAreaSqKm: 18,
+    affectedZones: ['zone-02', 'zone-07'],
+    description: 'Sudden intense rainfall during post-monsoon period caused flash flooding around Hussain Sagar area. Lake level rose rapidly causing overflow into Khairatabad.',
+    rainfallProgression: [
+      { timestamp: '2024-10-12T16:00:00Z', intensityMmHr: 30, accumulationMm: 30, source: 'mock' },
+      { timestamp: '2024-10-12T17:00:00Z', intensityMmHr: 68, accumulationMm: 98, source: 'mock' },
+      { timestamp: '2024-10-12T18:00:00Z', intensityMmHr: 52, accumulationMm: 150, source: 'mock' },
+      { timestamp: '2024-10-12T19:00:00Z', intensityMmHr: 25, accumulationMm: 175, source: 'mock' },
+      { timestamp: '2024-10-12T20:00:00Z', intensityMmHr: 8, accumulationMm: 183, source: 'mock' },
+    ],
+    metadata: {
+      dataSource: 'Mock — based on historical patterns',
+      verificationStatus: 'demo',
+    },
+  },
+  {
+    id: 'evt-hyd-2024-08-30',
+    cityId: 'hyderabad',
+    date: '2024-08-30',
+    title: 'Moderate Flooding — Old City',
+    severity: 'moderate',
+    maxRainfallMmHr: 48,
+    totalRainfallMm: 95,
+    durationHours: 4,
+    affectedAreaSqKm: 12,
+    affectedZones: ['zone-09'],
+    description: 'Moderate rainfall caused localized water logging in old city areas around Malakpet. Drainage coping but at elevated levels.',
+    rainfallProgression: [
+      { timestamp: '2024-08-30T10:00:00Z', intensityMmHr: 18, accumulationMm: 18, source: 'mock' },
+      { timestamp: '2024-08-30T11:00:00Z', intensityMmHr: 35, accumulationMm: 53, source: 'mock' },
+      { timestamp: '2024-08-30T12:00:00Z', intensityMmHr: 48, accumulationMm: 101, source: 'mock' },
+      { timestamp: '2024-08-30T13:00:00Z', intensityMmHr: 22, accumulationMm: 123, source: 'mock' },
+    ],
+    metadata: {
+      dataSource: 'Mock — based on historical patterns',
+      verificationStatus: 'demo',
+    },
+  },
+];
